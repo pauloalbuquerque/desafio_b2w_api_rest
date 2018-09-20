@@ -4,13 +4,16 @@
   "description": "Game Star Wars em NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "nodemon app.js"
   },
   "author": "Paulo Roberto",
   "license": "ISC",
   "devDependencies": {
-    "@types/express": "^4.16.0"
+    "@types/express": "^4.16.0",
+    "chai": "^4.1.2",
+    "request": "^2.88.0",
+    "should": "^13.2.3"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

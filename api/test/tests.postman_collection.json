@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "89718da0-8506-4334-9c75-1ba4ec8e7316",
+		"name": "tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/planets/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dba0ae89-644a-4d28-b10e-86717dac85ef",
+						"type": "text/javascript",
+						"exec": [
+							"tests ['test performed successfully'] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Teste1",
+							"type": "text"
+						},
+						{
+							"key": "climate",
+							"value": "teste2\n",
+							"type": "text"
+						},
+						{
+							"key": "terrain",
+							"value": "asrasa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/planets/5ba2517b22eb470c5c27e410",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"planets",
+						"5ba2517b22eb470c5c27e410"
+					]
+				},
+				"description": "Endpoint GET"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/planets/5ba2521b5adaee2018716fdf",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dba0ae89-644a-4d28-b10e-86717dac85ef",
+						"type": "text/javascript",
+						"exec": [
+							"tests ['test performed successfully'] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Teste1",
+							"type": "text"
+						},
+						{
+							"key": "climate",
+							"value": "teste2\n",
+							"type": "text"
+						},
+						{
+							"key": "terrain",
+							"value": "asrasa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/planets/5ba2517b22eb470c5c27e410",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"planets",
+						"5ba2517b22eb470c5c27e410"
+					]
+				},
+				"description": "Endpoint GET by id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/planets/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dba0ae89-644a-4d28-b10e-86717dac85ef",
+						"type": "text/javascript",
+						"exec": [
+							"tests ['test performed successfully'] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Teste1",
+							"type": "text"
+						},
+						{
+							"key": "climate",
+							"value": "teste2\n",
+							"type": "text"
+						},
+						{
+							"key": "terrain",
+							"value": "asrasa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/planets/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"planets",
+						""
+					]
+				},
+				"description": "Endpoint POST"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/planets/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dba0ae89-644a-4d28-b10e-86717dac85ef",
+						"type": "text/javascript",
+						"exec": [
+							"tests ['test performed successfully'] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Teste1",
+							"type": "text"
+						},
+						{
+							"key": "climate",
+							"value": "teste2\n",
+							"type": "text"
+						},
+						{
+							"key": "terrain",
+							"value": "asrasa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/planets/5ba2517b22eb470c5c27e410",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"planets",
+						"5ba2517b22eb470c5c27e410"
+					]
+				},
+				"description": "Endpoint DELETE"
+			},
+			"response": []
+		}
+	]
+}
